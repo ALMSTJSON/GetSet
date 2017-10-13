@@ -14,4 +14,4 @@ else
 *  If you just want to get it done (or not) and move on.
 *  TODO: Uncomment the following code to test.
 */
-OnYourMarks.GetSet("greeting", "Hello, devRant!.").Go();
+OnYourMarks.GetSet("greeting", "Hello, devRant!").Go();
