@@ -2,51 +2,11 @@
 <html lang="en-us">
 	<meta charset="utf-8" />
 	<head>
-		<style>
-			*
-			{
-				margin: 0;
-				padding: 0;
-			}
-
-			html, body
-			{
-				position: relative;
-				width: 100%;
-				height: 100%;
-				overflow: hidden;
-				text-align: center;
-			}
-
-			p
-			{
-				display: inline;
-				line-height: 100vh;
-			}
-		</style>
+		<link rel="stylesheet" href="Test.css" />
 		<script type="text/javascript" src="../source/bin/production/GetSet.min.js"></script>
 	</head>
 	<body>
 		<p id="greeting"></p>
-
-		<script>
-			/* Use-case #1:
-			*  If you need to perform an action in response to this operation.
-			*/
-			if(OnYourMarks.GetSet("greeting", "Hello.").Go() >= 0)
-			{
-				console.log("Done. Act accordingly.");
-			}
-			else
-			{
-				console.log("Not done. Act accordingly.");
-			}
-
-			/* Use-case #2:
-			*  If you just want to get it done (or not) and move on.
-			*  TODO: Uncomment the following code to test.
-			*/
-			OnYourMarks.GetSet("greeting", "Hello, devRant!.").Go();
-		</script>
+		<script type="text/javascript" src="Test.js"></script>
 	</body>
 </html>
