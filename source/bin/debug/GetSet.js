@@ -2,11 +2,14 @@ var OnYourMarks = OYM = O = _ = Oi =
 {
 	element: "",
 	value: "",
+	attribute: "text",
 
-	GetSet: function (element, value)
+	GetSet: function (element, value, attribute)
 	{
 		this.element = element;
 		this.value = value;
+		this.attribute = attribute;
+
 		return this;
 	},
 
@@ -16,7 +19,10 @@ var OnYourMarks = OYM = O = _ = Oi =
 
 		if(existingElement)
 		{
-			existingElement.innerHTML = this.value;
+			if(this.attribute == "text")
+				existingElement.innerText = this.value;
+			else
+				existingElement.innerHTML = this.value;
 		}
 		else
 		{
